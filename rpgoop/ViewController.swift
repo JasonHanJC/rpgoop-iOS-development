@@ -40,8 +40,10 @@ class ViewController: UIViewController {
         
         if rand == 0 {
             enemy = Kimara(startingHp: 50, attackPwr: 12)
+            enemyImg.image = UIImage(named: "enem1")
         } else {
             enemy = DevilWizard(startingHp: 60, attackPwr: 16)
+            enemyImg.image = UIImage(named: "enem2")
         }
         
         enemyHpLbl.text = "\(enemy.hp) HP"
